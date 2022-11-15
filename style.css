@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links {
+  padding: 2% 6%;
+  text-align: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.4s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.my-pic {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.my-name {
+  font-size: 1.8rem;
+}
+
+.icons {
+  cursor: pointer;
+  width: 100%;
+  margin: 12px 12px;
+  text-align: center;
+
+}
+
+.icons a {
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.flex-container {
+  display: flex;
+  margin: 35px 180px;
+}
+
+.flex-child {
+  flex: 1;
+  width: 50%;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" contact="width=device-width, initial-scale=1.0">
+  <title> Jenny's personal website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+</head>
+
+<body>
+  <nav class="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="internship.html">Internships</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
+  </nav>
+
+  <header style="text-align:center;">
+    <h1>Projects</h1>
+    <p></p>
+  </header>
+
+  <div class="flex-container">
+    <div class="flex-child">
+      <a href="https://drive.google.com/file/d/1bcwEYR6D07qVJLM_bR2INppcSTioLJrj/view?usp=share_link"
+        onmouseout="gibbs_jem_stop()" onmouseover="gibbs_jem_start()">
+        <img src="images/Pointpillars.png" width="70%">
+      </a>
+    </div>
+    <div class="flex-child">
+
+      <h3>PointPillars Backbone Comparison in Autonomous Vehicles Pedestrian Detection <a
+          href="https://drive.google.com/file/d/1bcwEYR6D07qVJLM_bR2INppcSTioLJrj/view?usp=share_link">(PDF)</a></h3>
+      <br>
+      <h4>Final project for Deep Learning, CSC413. In collaboration with Frank Qian, 2021.</h4>
+      <br>
+      <p>
+        PointPillars is an algorithm designed for 3D lidar point cloud object detection.
+        PointPillars first converts a 3D point cloud into a 2D pseudo image, then uses a 2D
+        CNN backbone to learn the object’s feature, and finally, a SSD detection head. In
+        this project, we seek to investigate the effectiveness of the 2D CNN backbone. We
+        proposed and compared a few different backbone options (FPN, ResNet, MobileNet, Darknet) to seek to improve the
+        performance of PointPillars. We observed that the PointPillars’ pseudo image’s
+        detection performance strongly correlates with the amount of convolution operation.
+        We note that the fewer the convolution operation, the better the result is.
+        Although we could not find a backbone with better detection accuracy than the existing FPN backbone,
+        we do found MobileNet Backbone can enhance the detection rate.
+      </p>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="flex-child" margin="30px">
+      <a href="https://drive.google.com/file/d/1nW4zKZhpfajmxvuhNuk7eFbRMCa4fcf0/view?usp=share_link"
+        onmouseout="gibbs_jem_stop()" onmouseover="gibbs_jem_start()">
+        <img src="images/thompson.jpeg" width="70%">
+      </a>
+    </div>
+    <div class="flex-child">
+      <h3> Improving Statistical Inference in Adaptive Thompson Sampling Algorithm <a
+          href="https://drive.google.com/file/d/1nW4zKZhpfajmxvuhNuk7eFbRMCa4fcf0/view?usp=share_link">(PDF)</a></h3>
+      <br>
+      <h4>Final project for CSC2558, Topics in Multidisciplinary HCI. Jenny Xu, 2021.</h4>
+      <br>
+      <p>
+        Thompson Sampling is an effective algorithm that uses Bayesian method with Beta-Bernoulli modeling to optimize
+        the reward by assigning each participant to an arm based
+
+        on the posterior probability that the arm is optimal, then updating the posterior based on
+        the data observed. This project explores the benefits of
+        introducing Uniform Random allocation in Thompson Sampling with two arms when the
+
+        posterior probability that there is a difference between two arms is small. The randomness is introduced when
+        the expected difference in the probability of success in the two arms is below a
+
+        certain threshold. This project will show that the modified algorithm, TS-PostDiff (Posterior
+        Probability of Difference), effectively increases statistical power when the effect size is small,
+        thus overcoming the bias in Thompson Sampling. The power, reward, probability of optimal
+        allocation, false positive rate are compared across TS PostDiff, TS and Uniform random
+        assignment.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="flex-container">
+    <div class="flex-child">
+      <a href="https://drive.google.com/file/d/1Kx5pVlN2hcnzQuRv-UnC2YTByFUmPhAb/view?usp=share_link"
+        onmouseout="gibbs_jem_stop()" onmouseover="gibbs_jem_start()">
+        <img src="images/Guide.png" width="70%">
+      </a>
+    </div>
+    <div class="flex-child">
+      <br><br>
+      <h3>Guide pour s'intégrer au Québec <a
+          href="https://drive.google.com/file/d/1Kx5pVlN2hcnzQuRv-UnC2YTByFUmPhAb/view?usp=share_link">(PDF)</a></h3>
+      <br>
+      <h4>Jenny Xu, 2017. </h4>
+      <br>
+      <p>
+        Le Québec, telle une belle province au sein du Canada!
+        J’ai eu un immense plaisir à rédiger ce guide pour aider les nouveaux arrivants au Québec se familiariser avec
+        la culture québécoise afin de pouvoir s’y intégrer rapidement.
+        Dans les neuf chapitres de ce guide, je vais vous
+        présenter des informations essentielles ainsi que des organismes utiles à contacter pour bien
+        vivre ses premières années au Québec. J'ai vécu à Montreal pendant sept ans. J'ai accumulé de précieuses
+        expériences et j'aimerais les partager
+        avec vous. Chers lecteurs, tous vos commentaires sont bienvenus. N'hésitez pas me faire parvenir vos
+        suggestions!
+        J'ai offert des copies physiques au Centre du Commerce de Montréal, au Centre d'aide aux immigrants et réfugiés
+        de Montreal en 2017.
+        <br> <br>
+        It was a pleasure writing this guide to help new arrivals in Quebec integrate into society. It's often
+        challenging for newcomers
+        to adjust to a new environment. I lived in Montreal with my family since 2012. I hope that by providing my
+        experience and practical
+        information, my guide can be a valuable resource for newcomers as they navigate their new environment. This
+        guide include nine chapters and covers
+        topics from housing, employment, education to culture. In 2017, I donated physical guide of this guide to the
+        Centre du Commerce de Montréal and the Centre d'aide aux immigrants et réfugiés de Montreal.
+        Please feel free to email me if you have any suggestions to make
+        greater impact with this project.
+      </p>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

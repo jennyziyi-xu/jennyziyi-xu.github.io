@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" contact="width=device-width, initial-scale=1.0">
+  <title> Jenny's personal website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+</head>
+
+<body>
+  <nav class="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="internship.html">Internships</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
+  </nav>
+
+  <header style="text-align:center;">
+    <h1>Research</h1>
+    <p></p>
+  </header>
+
+  <div class="flex-container">
+    <div class="flex-child">
+
+      <img src="images/modest.png" width="70%">
+
+    </div>
+    <div class="flex-child">
+
+      <h3>Self-Supervised LiDAR-based 3D Object Detection </h3>
+      <br>
+      <h4>CSC494, Independent Research Project. Supervisor: Prof. Steven Waslander. </h4>
+      <br>
+      <p>
+        Current LiDAR-based 3D object detectors for autonomous driving are almost entirely trained on human-annotated
+        data,
+        making it difficult to adapt to a different domain.
+        In this project, I explore self-supervised LiDAR-based 3D object detection by extracting seed labels from
+        multiple traversals of the same location using unannotated LiDAR scans.
+        I build on top of <a href="https://arxiv.org/pdf/2203.15882.pdf">MODEST</a> (Mobile Object Detection with
+        Ephemerality and Self-Training).
+      </p>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="flex-child" margin="30px">
+      <a href="https://arxiv.org/abs/2210.08729" onmouseout="gibbs_jem_stop()" onmouseover="gibbs_jem_start()">
+        <img src="images/kitti.jpeg" width="70%">
+      </a>
+    </div>
+    <div class="flex-child">
+      <h3> VoxelCache: Accelerating Online Mapping in Robotics and 3D Reconstruction Tasks <a
+          href="https://arxiv.org/abs/2210.08729">(PDF)</a></h3>
+      <br>
+      <h4>Summer Research 2021. Supervisor: Prof. Nandita Vijaykumar. </h4>
+      <br>
+      <p>Sankeerth Durvasula, Raymond Kiguru, Samarth Mathur, Jenny Xu, Jimmy Lin, and Nandita Vijaykumar. 2022.
+        VoxelCache: Accelerating Online Mapping in Robotics and 3D Reconstruction Tasks . In PACT ’22: International
+        Conference on Parallel Architectures and Compilation Techniques (PACT),
+        October 10–12, 2022, Chicago, IL. ACM, New York, NY, USA, 13 pages.</p>
+      <br>
+      <p>
+        We identify that 3D mapping (the construction and updates of 3D maps) is a critifical bottleneck in SLAM and 3D
+        reconstruction.
+        We propose VoxelCache to accelerate map data access times in 3D mapping applications. VoxelCache is a
+        hardware-software technique
+        where indices to blocks of voxels are cached to enable quick lookup by leveraging the temporal locality in voxel
+        accesses.
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
